@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
+
+.fundo{
+    position: absolute;
+    background: url(/img/background.png);
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    background: url(/img/dino.png);
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: url(/img/cactus.png);
+}
+
+
+.game-over{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    
+    font-family: 'fredoka';
+}
+
+@keyframes slideright{
+
+    from{background-position: 70000%;}
+    to{background-position: 0;}
+}
